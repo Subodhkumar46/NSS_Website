@@ -236,11 +236,32 @@
     z-index: 2;
     opacity: 0;
 }
-
+.portfolio-item {
+  margin-bottom: 30px;
+}
 .portfolio-item:hover .portfolio-btn {
     opacity: 1;
 }
 
+.portfolio-box img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  padding: 10px;
+}
+
+.portfolio-box img {
+  height: 250px;
+  object-fit: cover;
+}
 .portfolio-box::before,
 .portfolio-box::after {
     position: absolute;
