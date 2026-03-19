@@ -136,22 +136,133 @@
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     padding: 35px 15px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
     text-transform: uppercase;
     color: var(--light);
     outline: none;
-    transition: .5s;
+    transition: .3s;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: var(--primary);
+/* Base Navigation Link Styles (for transparent state) */
+.navbar-transparent .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-transparent .navbar-brand p {
+    color: #ffffff !important;
+}
+
+/* Scrolled/Solid Navigation State */
+.navbar-solid {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+.navbar-solid .navbar-nav .nav-link {
+    color: var(--dark) !important;
+}
+.navbar-solid .navbar-nav .nav-link:hover,
+.navbar-solid .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+.navbar-solid .navbar-brand p {
+    color: var(--dark) !important;
+}
+
+/* Hover & Active Indicator underline */
+.navbar-nav .nav-link::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 25px;
+    left: 15px;
+    background: var(--primary);
+    transition: width .3s ease, left .3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: calc(100% - 30px);
+}
+
+/* Transparent State Hover override */
+.navbar-transparent .navbar-nav .nav-link:hover,
+.navbar-transparent .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+
+/* Modern Contact Button */
+.btn-modern-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px !important;
+    margin-left: 15px;
+    margin-top: 22px;
+    height: 45px;
+    border-radius: 50px !important;
+    background: linear-gradient(135deg, var(--primary), #1a8ad4);
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(58, 176, 255, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-modern-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(58, 176, 255, 0.6);
+    color: #ffffff !important;
+}
+
+.btn-modern-contact::after {
+    display: none; /* Hide standard btn underline */
 }
 
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link  {
         margin-left: 0;
-        padding: 10px 0;
+        padding: 10px 15px;
+    }
+    .navbar-nav .nav-link::after {
+        bottom: 5px;
+    }
+    .btn-modern-contact {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    /* Fixed offscreen bug on mobile */
+    .navbar-collapse {
+        background: rgba(4, 15, 40, 0.95);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .navbar-solid .navbar-collapse {
+        background: #ffffff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .navbar-transparent .navbar-nav .nav-link {
+        color: #ffffff !important;
+    }
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0.5);
+    }
+    .navbar-solid .navbar-toggler {
+        background-color: var(--primary);
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
 
@@ -535,8 +646,7 @@ object-position:top;
     -ms-transform: translateY(calc(4px + 10em)) !important;
     transform: translateY(calc(4px + 10em)) !important;
   }
-  .card .line2 {
-  }
+  
   .card .line3 {
     -webkit-transform: translateY(calc(4px + 6em)) !important;
     -ms-transform: translateY(calc(4px + 6em)) !important;

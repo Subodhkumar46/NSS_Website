@@ -28,14 +28,29 @@
     });
     
     
-    // Back to top button
+    // Back to top button & Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
         }
+
+        // Navbar Transparent to Solid Scroll Effect
+        if ($(this).scrollTop() > 45) {
+            $('.navbar-wrapper').removeClass('navbar-transparent').addClass('navbar-solid');
+        } else {
+            $('.navbar-wrapper').removeClass('navbar-solid').addClass('navbar-transparent');
+        }
     });
+
+    // Ensure initial navbar state is set on load
+    if ($(window).scrollTop() > 45) {
+        $('.navbar-wrapper').removeClass('navbar-transparent').addClass('navbar-solid');
+    } else {
+        $('.navbar-wrapper').removeClass('navbar-solid').addClass('navbar-transparent');
+    }
+
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
