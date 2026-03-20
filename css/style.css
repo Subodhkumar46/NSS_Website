@@ -1005,3 +1005,48 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* --- NSS Post Holders Section Modernization --- */
+.post-holders-section {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.post-holder-card {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    border-radius: 20px !important;
+    padding: 30px 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1 !important; /* Ensure no fading */
+    position: relative;
+    z-index: 1;
+}
+
+.post-holder-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+    z-index: 2;
+}
+
+.post-holder-img {
+    width: 140px !important;
+    height: 140px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 4px solid #ffffff;
+    background-color: #ffffff; /* Fallback if transparent img */
+}
+
+.post-holder-name {
+    font-weight: 700;
+    color: #222222 !important;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.post-holder-role {
+    color: #555555 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
