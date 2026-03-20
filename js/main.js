@@ -58,6 +58,17 @@
             return false;
         });
 
+        // Smooth scrolling for navigation links
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 70
+                }, 1000, 'easeInOutExpo');
+            }
+        });
+
         // Portfolio isotope and filter
         if ($('.portfolio-container').length) {
             var portfolioIsotope = $('.portfolio-container').isotope({
@@ -75,18 +86,17 @@
         // po carousel (Programme Officers)
         if ($('.po-carousel').length) {
             $('.po-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
                 autoplay: true,
                 autoplayTimeout: 2000,
                 autoplayHoverPause: true,
                 smartSpeed: 800,
-                dots: true,
-                loop: true,
-                margin: 30,
-                nav: false,
                 responsive: {
                     0: { items: 1 },
-                    768: { items: 2 },
-                    992: { items: 3 }
+                    600: { items: 2 },
+                    1000: { items: 3 }
                 }
             });
         }

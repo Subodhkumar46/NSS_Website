@@ -1234,3 +1234,8 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+.owl-stage {
+    display: flex;
+    align-items: stretch;
+}
