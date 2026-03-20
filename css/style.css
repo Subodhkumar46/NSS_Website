@@ -1050,3 +1050,78 @@ html {
     font-weight: 500;
     font-size: 1.1rem;
 }
+
+/* --- Programme Officers Section --- */
+.programme-officers-section {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.programme-officer-card {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    border-radius: 20px !important;
+    padding: 25px 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+.programme-officer-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+    z-index: 2;
+}
+
+.po-img {
+    width: 100%;
+    height: 240px !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #f8f9fa; /* Fallback */
+}
+
+.po-name {
+    font-weight: 800;
+    color: #222222 !important;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.po-role {
+    color: #555555 !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.po-details {
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+}
+
+.po-details p {
+    margin-bottom: 6px;
+    color: #444444;
+}
+
+.po-details p:last-child {
+    margin-bottom: 0;
+}
+
+.po-details strong {
+    color: #222222;
+    font-weight: 700;
+    display: inline-block;
+    width: 95px;
+}
