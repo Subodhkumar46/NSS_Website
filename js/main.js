@@ -60,8 +60,10 @@
 
         // Smooth scrolling for navigation links
         $('a[href^="#"]').on('click', function(event) {
-            var target = $(this.getAttribute('href'));
-            if( target.length ) {
+            var href = this.getAttribute('href');
+            if (href === '#') return;
+            var target = $(href);
+            if (target.length) {
                 event.preventDefault();
                 $('html, body').stop().animate({
                     scrollTop: target.offset().top - 70
@@ -90,25 +92,24 @@
                 margin: 20,
                 nav: false,
                 autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                smartSpeed: 800,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 3 }
-                }
+                autoplayTimeout: 2500,
+                autoplayHoverPause: false,
+                smartSpeed: 1000,
+                items: 1
             });
         }
 
         // Testimonials carousel
         if ($('.testimonial-carousel').length) {
             $(".testimonial-carousel").owlCarousel({
-                autoplay: true,
-                smartSpeed: 1000,
-                items: 1,
-                dots: false,
                 loop: true,
+                margin: 20,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: false,
+                smartSpeed: 1000,
+                items: 1
             });
         }
 
