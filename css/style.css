@@ -1503,3 +1503,225 @@ html {
         transform: translate(0, 0);
     }
 }
+
+/* Contact Anchor Fix */
+#contact {
+    scroll-margin-top: 100px;
+}
+
+
+/* --- NSS Units Hero Redesign --- */
+.units-hero {
+    background: url('../img/nit\ kkr.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 130px 0;
+    min-height: 480px;
+    z-index: 1;
+}
+
+.units-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 15, 40, 0.65);
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2 !important;
+}
+
+.units-hero-title {
+    letter-spacing: 2.5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    animation: slideUpFade 1.2s ease-out forwards;
+    font-size: calc(2.5rem + 2.5vw);
+}
+
+.units-hero-subtitle {
+    color: #eeeeee !important;
+    max-width: 720px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.6;
+    animation: slideUpFade 1.2s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.units-hero-divider {
+    width: 100px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(58, 176, 255, 0.5);
+    animation: slideUpFade 1.2s ease-out 0.15s forwards;
+    opacity: 0;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Fix for Navbar Overlapping Specifically on Contact Page --- */
+.navbar.sticky-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+}
+
+/* Add appropriate spacing so the contact page header starts BELOW the navbar */
+/* Targeting the specific inline margin used only on the contact page header */
+.page-header[style*="margin-top: 80px"] {
+    margin-top: 120px !important; 
+}
+
+/* Ensure anchor links (like clicking the Contact button) are not hidden by the sticky navbar */
+html {
+    scroll-padding-top: 120px;
+}
+
+/* --- Projects Page Enhancements --- */
+.sustainability-accent-left {
+    border-left: 5px solid #198754; 
+}
+.sustainability-accent-bottom {
+    border-bottom: 5px solid #0d6efd; 
+}
+.project-card {
+    border-radius: 12px !important;
+    transition: all 0.4s ease;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(25, 135, 84, 0.15) !important; 
+    border-color: rgba(25, 135, 84, 0.3) !important;
+}
+.project-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.project-card:hover .project-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+.bg-success-light {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+.bg-info-light {
+    background-color: rgba(13, 202, 240, 0.1);
+}
+.bg-primary-light {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+.bg-warning-light {
+    background-color: rgba(255, 193, 7, 0.1);
+}
+.border-end-md {
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+@media (max-width: 767.98px) {
+    .border-end-md {
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding-bottom: 1.5rem;
+    }
+/* --- NSS Full-Screen Song Section --- */
+.nss-fullscreen-song {
+    position: relative;
+    width: 100%;
+    /* Accounting approx 85px for navbar so it fits exactly screen height, or just full vh */
+    min-height: calc(100vh - 85px);
+    background: url('../img/pmo.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.nss-fullscreen-song .nss-song-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.nss-fullscreen-song .nss-song-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 2.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nss-fullscreen-song .song-glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+/* hide scrollbar for webkit to keep design clean */
+.nss-fullscreen-song .song-glass-container::-webkit-scrollbar {
+    width: 6px;
+}
+.nss-fullscreen-song .song-glass-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.nss-fullscreen-song .song-heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+.nss-fullscreen-song .song-lyrics p {
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 0.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .nss-fullscreen-song .song-glass-container {
+        padding: 2rem 1.5rem;
+        max-height: 75vh;
+    }
+    .nss-fullscreen-song .song-heading {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .nss-fullscreen-song .song-lyrics p {
+        font-size: 1rem;
+    }
+}
