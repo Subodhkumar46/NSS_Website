@@ -121,7 +121,7 @@
   <div class="container-fluid p-0 hero-header">
     <div class="container d-flex flex-column align-items-start justify-content-center text-start h-100"
       style="min-height: 55vh; padding-top: 120px; padding-bottom: 80px;">
-      <h1 class="display-3 text-white font-weight-bold mb-4" style="font-family: 'Poppins', sans-serif;">National<br>Service Scheme</h1>
+      <h1 class="display-3 text-white font-weight-bold mb-4" style="font-family: 'Poppins', sans-serif;">National Service Scheme</h1>
       <p class="fs-4 text-white mb-4 pb-2" style="max-width: 800px; font-weight: 300;">
         "Not Me, But You – Committed to social service and nation building through dedicated youth volunteers."
       </p>
@@ -137,9 +137,9 @@
     <div class="row g-5 align-items-center">
       <div class="col-lg-6">
         <h2 class="nss-slogan mt-2 mb-4">श्रमेव जयते...</h2>
-        <h1 class="display-5 text-uppercase mb-4">
+        <h2 class="display-5 text-uppercase mb-4">
           Who we <span class="text-dark">Are</span> ?
-        </h1>
+        </h2>
         <h4 class="text-uppercase mb-3 text-body">
           NSS NIT Kurukshetra consists of highly motivated and dedicated members towards serving the society thus
           contributing in a better tomorrow.
@@ -184,7 +184,7 @@
         <p class="mb-4 about-section-text">
           We also collaborate with several NGOs in and around and NIT Kurukshetra working on these issues.
         </p>
-        <!-- <img src="img/signature.jpg" alt="" /> -->
+        <!-- <img src="img/signature.jpg" alt="signature image" /> -->
       </div>
       <div class="col-lg-6 pb-5" style="min-height: 450px">
         <div class="position-relative h-100 ms-lg-5">
@@ -197,28 +197,27 @@
   <!-- About End -->
 
   <!-- Services Start -->
-  <div class="container-fluid bg-light py-5 px-lg-5">
+  <div class="container-fluid bg-light py-6 px-lg-5">
     <div class="text-center mx-auto mb-5" style="max-width: 600px">
-      <h1 class="display-5 text-uppercase mb-4">
+      <h2 class="display-5 text-uppercase mb-4">
         Not For <span class="text-dark">Me</span> But For All
-      </h1>
+      </h2>
     </div>
     <div class="row g-5">
       <div class="col-lg-4 col-md-6">
         <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-          <img class="img-fluid" src="img/nss1.jpg" alt="" />
+          <img class="img-fluid" src="img/nss1.jpg" alt="nss1 image" />
           <div class="service-icon bg-white">
             <i class="fa fa-3x fa-bicycle text-primary"></i>
           </div>
           <div class="px-4 pb-4">
-            <input type="checkbox" id="check">
             <h4 class="text-uppercase mb-3">National Bicycle Day</h4>
             <p>
               “Let Us Forget Motor Vehicles This Day,
               And Cycle On World Bicycle Day.”
             </p>
-            <div class="content">
-              <p>
+            <div class="collapse" id="collapseBicycle">
+              <p class="mb-3">
                 Celebrated on 3rd of June every year, World Bicycle Day draws attention to the benefits of using the
                 bicycle – a simple, affordable, reliable, clean and environmentally fit sustainable means of
                 transportation.
@@ -228,28 +227,24 @@
                 outweigh potential harm.
               </p>
             </div>
-            <!-- <a class="btn text-primary check" href=""
-                >Read More <i class="bi bi-arrow-right "></i
-              ></a> -->
-            <label for="check">READ MORE<i class=" text-primary bi bi-arrow-right "></i></label>
+            <button class="btn p-0 text-primary border-0 fw-bold d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBicycle" aria-expanded="false" aria-controls="collapseBicycle" onclick="this.innerHTML = this.getAttribute('aria-expanded') === 'true' ? 'SHOW LESS<i class=\'bi bi-arrow-down ms-2\'></i>' : 'READ MORE<i class=\'bi bi-arrow-right ms-2\'></i>';">READ MORE<i class="bi bi-arrow-right ms-2"></i></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-          <img class="img-fluid" src="img/DSC_4777.JPG" alt="" />
+          <img class="img-fluid" src="img/DSC_4777.JPG" alt="DSC_4777 image" />
           <div class="service-icon bg-white">
             <i class="fa fa-3x fa-heart-pulse text-primary"></i>
           </div>
           <div class="px-4 pb-4">
-            <input type="checkbox" id="check_2">
             <h4 class="text-uppercase mb-3">Health CheckUp Camp</h4>
             <p>
               “The Health of Nations is more important than the Wealth of Nations.”
               - Will Durant
             </p>
-            <div class="content">
-              <p>
+            <div class="collapse" id="collapseHealth">
+              <p class="mb-3">
                 A Health Check-up Camp is a setup with a sacred aim to bring awareness amongst the deprived population
                 of the country who have no access to basic healthcare services or knowledge about various diseases.
                 These camps are conducted (ON DATE) by health professionals to carry out a limited health intervention
@@ -257,44 +252,37 @@
                 human being. The main objective of a health checkup camp is to provide initial care to people in
                 life-threatening conditions which reflect the unique strengths and goals of medical ethics.</p>
             </div>
-            <!-- <a class="btn text-primary check" href=""
-                >Read More <i class="bi bi-arrow-right "></i
-              ></a> -->
-            <label for="check_2">READ MORE<i class=" text-primary bi bi-arrow-right "></i></label>
+            <button class="btn p-0 text-primary border-0 fw-bold d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHealth" aria-expanded="false" aria-controls="collapseHealth" onclick="this.innerHTML = this.getAttribute('aria-expanded') === 'true' ? 'SHOW LESS<i class=\'bi bi-arrow-down ms-2\'></i>' : 'READ MORE<i class=\'bi bi-arrow-right ms-2\'></i>';">READ MORE<i class="bi bi-arrow-right ms-2"></i></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-          <img class="img-fluid" src="img/DSC_4777.JPG" alt="" />
+          <img class="img-fluid" src="img/DSC_4777.JPG" alt="DSC_4777 image" />
           <div class="service-icon bg-white">
             <i class="fa fa-3x fa-hand-holding-droplet text-primary"></i>
           </div>
           <div class="px-4 pb-4">
-            <input type="checkbox" id="check_3">
             <h4 class="text-uppercase mb-3">Blood Donation Camp</h4>
             <p>
               “The only thing more valuable than wealth is life, and blood is the most valuable medicine for saving
               lives.”</p>
-            <div class="content">
-              <p>
+            <div class="collapse" id="collapseBlood">
+              <p class="mb-3">
                 Blood Donation Camp is conducted (ON DATE) to serve for the purpose of selecting a suitable donor (of a
                 particular blood group) whose blood is safe to the recipients and who himself shall not in any wat be
                 harmed by blood donation. Organizing voluntary blood donation camps nationwide on regular basis will
                 increase int the stock of blood units in blood bank which is needed for optimum functioning of the
                 health care system. These camps help to maintain an adequate supply of blood to save the lives of those
-                who are in great need of it.
+                who are in great need of it.</p>
             </div>
-            <!-- <a class="btn text-primary check" href=""
-                >Read More <i class="bi bi-arrow-right "></i
-              ></a> -->
-            <label for="check_3">READ MORE<i class=" text-primary bi bi-arrow-right "></i></label>
+            <button class="btn p-0 text-primary border-0 fw-bold d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlood" aria-expanded="false" aria-controls="collapseBlood" onclick="this.innerHTML = this.getAttribute('aria-expanded') === 'true' ? 'SHOW LESS<i class=\'bi bi-arrow-down ms-2\'></i>' : 'READ MORE<i class=\'bi bi-arrow-right ms-2\'></i>';">READ MORE<i class="bi bi-arrow-right ms-2"></i></button>
           </div>
         </div>
       </div>
       <!-- <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/service-4.jpg" alt="">
+                    <img class="img-fluid" src="img/service-4.jpg" alt="service-4 image">
                     <div class="service-icon bg-white">
                         <i class="fa fa-3x fa-palette text-primary"></i>
                     </div>
@@ -307,7 +295,7 @@
             </div> -->
       <!-- <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/service-5.jpg" alt="">
+                    <img class="img-fluid" src="img/service-5.jpg" alt="service-5 image">
                     <div class="service-icon bg-white">
                         <i class="fa fa-3x fa-tools text-primary"></i>
                     </div>
@@ -320,7 +308,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/service-6.jpg" alt="">
+                    <img class="img-fluid" src="img/service-6.jpg" alt="service-6 image">
                     <div class="service-icon bg-white">
                         <i class="fa fa-3x fa-paint-brush text-primary"></i>
                     </div>
@@ -339,16 +327,16 @@
 
 
   <!-- NSS Camp Start -->
-  <div class="container-fluid bg-light py-5 px-lg-5" id="nss-camp">
+  <div class="container-fluid bg-light py-6 px-lg-5" id="nss-camp">
     <div class="text-center mx-auto mb-5" style="max-width: 600px">
-      <h1 class="display-5 text-uppercase mb-4">
+      <h2 class="display-5 text-uppercase mb-4">
         Our <span class="text-dark">NSS Camp</span> Activities
-      </h1>
+      </h2>
     </div>
     <div class="row g-5">
       <div class="col-lg-4 col-md-6">
         <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
-          <img class="img-fluid w-100" src="img/events/swach0.jpeg" alt="" style="height: 250px; object-fit: cover;" />
+          <img class="img-fluid w-100" src="img/events/swach0.jpeg" alt="swach0 image" style="height: 250px; object-fit: cover;" />
           <a class="portfolio-title shadow-sm bg-white" href="">
             <p class="h4 text-uppercase mb-1">Annual Camp</p>
             <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>NSS NIT KKR</span>
@@ -357,7 +345,7 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
-          <img class="img-fluid w-100" src="img/events/sewa0.jpeg" alt="" style="height: 250px; object-fit: cover;" />
+          <img class="img-fluid w-100" src="img/events/sewa0.jpeg" alt="sewa0 image" style="height: 250px; object-fit: cover;" />
           <a class="portfolio-title shadow-sm bg-white" href="">
             <p class="h4 text-uppercase mb-1">Village Volunteering</p>
             <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>NSS NIT KKR</span>
@@ -366,7 +354,7 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
-          <img class="img-fluid w-100" src="img/events/nsa0.jpeg" alt="" style="height: 250px; object-fit: cover;" />
+          <img class="img-fluid w-100" src="img/events/nsa0.jpeg" alt="nsa0 image" style="height: 250px; object-fit: cover;" />
           <a class="portfolio-title shadow-sm bg-white" href="">
             <p class="h4 text-uppercase mb-1">Camp Workshops</p>
             <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>NSS NIT KKR</span>
@@ -386,9 +374,9 @@
 <!-- Portfolio End -->
 
           <!-- Post Holders Slider Start -->
-          <div class="container-fluid py-5 px-lg-5 fade-in-up post-holders-section" id="post-holders">
+          <div class="container-fluid py-6 px-lg-5 fade-in-up post-holders-section" id="post-holders">
             <div class="text-center mx-auto mb-5 mt-4" style="max-width: 600px">
-              <h1 class="display-5 text-uppercase text-white mb-4">NSS Post Holders</h1>
+              <h2 class="display-5 text-uppercase text-white mb-4">NSS Post Holders</h2>
               <p class="fs-5 text-light opacity-75">The dedicated student leadership team of NSS NIT Kurukshetra.</p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -457,9 +445,9 @@
           <!-- Post Holders Slider End -->
 
           <!-- Programme Officers Start -->
-          <div class="container-fluid py-5 px-lg-5 fade-in-up programme-officers-section" id="programme-officers">
+          <div class="container-fluid py-6 px-lg-5 fade-in-up programme-officers-section" id="programme-officers">
             <div class="text-center mx-auto mb-5 mt-4" style="max-width: 600px">
-              <h1 class="display-5 text-uppercase text-white mb-4">Programme Officers</h1>
+              <h2 class="display-5 text-uppercase text-white mb-4">Programme Officers</h2>
               <p class="fs-5 text-light opacity-75">The dedicated faculty guiding the NSS NIT Kurukshetra units.</p>
             </div>
             <div class="owl-carousel po-carousel owl-theme">
@@ -603,11 +591,11 @@
           <!-- Programme Officers End -->
 
           <!-- Testimonial Start -->
-          <div class="container-fluid py-5 px-lg-5 testimonial-section bg-light-radial">
+          <div class="container-fluid py-6 px-lg-5 testimonial-section bg-light-radial">
             <div class="text-center mx-auto mb-5" style="max-width: 600px">
-              <h1 class="display-5 text-uppercase mb-4 text-white">
-                What Our <span class="text-white">Contributors</span> Say!!!
-              </h1>
+              <h2 class="display-5 text-uppercase mb-4 text-dark">
+                What Our <span class="text-dark">Contributors</span> Say!!!
+              </h2>
             </div>
             <div class="row g-4 align-items-center justify-content-center">
               <div class="col-12">
@@ -698,7 +686,7 @@
       <div class="row g-5">
         <div class="col-lg-4 col-md-6">
           <div class="bg-light">
-            <img class="img-fluid" src="img/blog-1.jpg" alt="" />
+            <img class="img-fluid" src="img/blog-1.jpg" alt="blog-1 image" />
             <div class="p-4">
               <div class="d-flex justify-content-between mb-4">
                 <div class="d-flex align-items-center">
@@ -707,7 +695,7 @@
                     src="img/user.jpg"
                     width="35"
                     height="35"
-                    alt=""
+                    alt="NSS descriptive image"
                   />
                   <span>John Doe</span>
                 </div>
@@ -729,7 +717,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="bg-light">
-            <img class="img-fluid" src="img/blog-2.jpg" alt="" />
+            <img class="img-fluid" src="img/blog-2.jpg" alt="blog-2 image" />
             <div class="p-4">
               <div class="d-flex justify-content-between mb-4">
                 <div class="d-flex align-items-center">
@@ -738,7 +726,7 @@
                     src="img/user.jpg"
                     width="35"
                     height="35"
-                    alt=""
+                    alt="NSS descriptive image"
                   />
                   <span>John Doe</span>
                 </div>
@@ -760,7 +748,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="bg-light">
-            <img class="img-fluid" src="img/blog-3.jpg" alt="" />
+            <img class="img-fluid" src="img/blog-3.jpg" alt="blog-3 image" />
             <div class="p-4">
               <div class="d-flex justify-content-between mb-4">
                 <div class="d-flex align-items-center">
@@ -769,7 +757,7 @@
                     src="img/user.jpg"
                     width="35"
                     height="35"
-                    alt=""
+                    alt="NSS descriptive image"
                   />
                   <span>John Doe</span>
                 </div>
@@ -851,7 +839,7 @@
                 <div class="input-group">
                   <input type="email" class="form-control newsletter-input" style="padding: 15px;"
                     placeholder="Your Email Address">
-                  <button class="btn btn-primary px-4 fw-bold">Sign Up</button>
+                  <button class="btn btn-primary px-4 fw-bold modern-solid-btn">Sign Up</button>
                 </div>
               </div>
             </div>
@@ -870,7 +858,7 @@
         <!-- Footer End -->
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top modern-solid-btn"><i class="bi bi-arrow-up"></i></a>
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
