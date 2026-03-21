@@ -89,90 +89,225 @@
   </nav>
   <!-- Navbar End -->
 
-  <main class="flex-grow-1">
+  <main class="flex-grow-1 bg-light pb-5 position-relative overflow-hidden">
+    
+    <!-- Background Decorators -->
+    <div style="position: absolute; top: 10%; left: -5%; width: 300px; height: 300px; background: rgba(13, 110, 253, 0.05); filter: blur(60px); border-radius: 50%; z-index: 0;"></div>
+    <div style="position: absolute; bottom: 20%; right: -5%; width: 400px; height: 400px; background: rgba(255, 193, 7, 0.05); filter: blur(80px); border-radius: 50%; z-index: 0;"></div>
 
-  <!-- Units Start -->
-  <section class="container-fluid bg-white py-5 px-lg-5" id="units">
-    <div class="text-center mx-auto mb-5" style="max-width: 800px">
-      <h1 class="display-5 text-uppercase text-dark mb-4">NSS Service Units</h1>
-      <p class="fs-5 text-secondary">Dedicated to the principles of social responsibility and community development through our six progressive service units.</p>
+    <!-- Units Hero Section -->
+    <section class="container-fluid units-py-6 bg-white shadow-sm position-relative units-mb-6" style="border-bottom: 4px solid #333; z-index: 1;">
+      <div class="text-center mx-auto" style="max-width: 800px">
+        <h1 class="display-4 text-uppercase text-dark fw-bold mb-3">Our NSS Units</h1>
+        <div style="width: 100px; height: 5px; background-color: #333; margin: 0 auto 20px; border-radius: 3px;"></div>
+        <p class="fs-5 text-secondary">Dedicated to the principles of social responsibility and community development through our six progressive service units.</p>
+      </div>
+    </section>
+
+    <div class="container-fluid p-0 m-0 position-relative" style="z-index: 1;">
+      
+      <!-- Unit 1: Nirbhaya (Image Left) -->
+      <section class="unit-section units-py-6 bg-light border-bottom border-light">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-0">
+            <div class="col-lg-6 scroll-anim fade-in-left">
+              <div class="unit-img-wrapper position-relative overflow-hidden rounded-4 shadow-lg hover-scale">
+                <img src="img/nirbhay.png" class="img-fluid w-100" style="object-fit: cover; height: 400px;" alt="Unit Nirbhaya" onerror="this.src='img/NSS_Logo.png'">
+              </div>
+            </div>
+            <div class="col-lg-6 scroll-anim fade-in-up delay-1">
+              <div class="unit-card p-5 rounded-4 shadow-sm glass-panel border border-light">
+                <h2 class="display-5 fw-bold text-dark mb-1">NIRBHAYA</h2>
+                <h5 class="mb-4 fw-bold fst-italic" style="color: #6c757d;">1st Year</h5>
+                <p class="mb-4 fs-6" style="color: #333; line-height: 1.8;">Nirbhaya introduces first-year students to social service through basic community interaction, awareness drives, and campus cleanliness initiatives. The focus is on building sensitivity toward societal issues and instilling discipline and teamwork. Volunteers learn the value of small efforts and consistent actions in making a meaningful difference in society.</p>
+                <h6 class="text-uppercase fw-bold text-dark mb-3 mt-4" style="font-size: 0.85rem; letter-spacing: 1px;">Programme Officers</h6>
+                <div class="d-flex flex-wrap gap-3 scroll-anim fade-in-up delay-2">
+                  <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light">
+                    <img src="img/vaibhav.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Dr. Vaibhav Agarwal" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Dr. Vaibhav Agarwal</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light">
+                    <img src="img/SWEETI.png" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Sweeti Sah" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Sweeti Sah</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 2: Prayas (Image Right) -->
+      <section class="unit-section units-py-6 bg-white border-bottom border-light">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-0">
+            <div class="col-lg-6 order-lg-2 scroll-anim fade-in-right">
+              <div class="unit-img-wrapper position-relative overflow-hidden rounded-4 shadow-lg hover-scale">
+                <img src="img/prayas.png" class="img-fluid w-100" style="object-fit: cover; height: 400px;" alt="Unit Prayas" onerror="this.src='img/NSS_Logo.png'">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 scroll-anim fade-in-up delay-1">
+              <div class="unit-card p-5 rounded-4 shadow-sm glass-panel border border-light">
+                <h2 class="display-5 fw-bold text-dark mb-1">PRAYAS</h2>
+                <h5 class="mb-4 fw-bold fst-italic" style="color: #6c757d;">2nd Year</h5>
+                <p class="mb-4 fs-6" style="color: #333; line-height: 1.8;">Prayas actively introduces profound social service actions through direct community interaction, deep awareness drives, and robust campus cleanliness initiatives. The focus powerfully shifts toward consistently executing tangible small efforts to make a meaningful, lasting difference in local society.</p>
+                <h6 class="text-uppercase fw-bold text-dark mb-3 mt-4" style="font-size: 0.85rem; letter-spacing: 1px;">Programme Officers</h6>
+                <div class="d-flex flex-wrap gap-3 scroll-anim fade-in-up delay-2">
+                  <div class="d-flex align-items-center bg-light p-2 pe-4 rounded-4 shadow-sm border border-white">
+                    <img src="img/dheeraj.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Dheeraj Kumar Sharma" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Dheeraj Kumar Sharma</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center bg-light p-2 pe-4 rounded-4 shadow-sm border border-white">
+                    <img src="img/CHILUKAMARI.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Chilukumari Rajesh" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Chilukumari Rajesh</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 3: Sahyog (Image Left) -->
+      <section class="unit-section units-py-6 bg-light border-bottom border-light">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-0">
+            <div class="col-lg-6 scroll-anim fade-in-left">
+              <div class="unit-img-wrapper position-relative overflow-hidden rounded-4 shadow-lg hover-scale">
+                <img src="img/sahyog.png" class="img-fluid w-100" style="object-fit: cover; height: 400px;" alt="Unit Sahyog" onerror="this.src='img/NSS_Logo.png'">
+              </div>
+            </div>
+            <div class="col-lg-6 scroll-anim fade-in-up delay-1">
+              <div class="unit-card p-5 rounded-4 shadow-sm glass-panel border border-light">
+                <h2 class="display-5 fw-bold text-dark mb-1">SAHYOG</h2>
+                <h5 class="mb-4 fw-bold fst-italic" style="color: #6c757d;">3rd Year</h5>
+                <p class="mb-4 fs-6" style="color: #333; line-height: 1.8;">Sahyog explicitly emphasizes active collaboration and immense planning coordination amongst 3rd-year students. Volunteers engage intimately in organizing monumental collaborative events, relentlessly conducting surveys, and flawlessly executing vast, far-reaching community awareness campaigns.</p>
+                <h6 class="text-uppercase fw-bold text-dark mb-3 mt-4" style="font-size: 0.85rem; letter-spacing: 1px;">Programme Officers</h6>
+                <div class="d-flex flex-wrap gap-3 scroll-anim fade-in-up delay-2">
+                  <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light">
+                    <img src="img/sidharth.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Sidhartha Harichandan" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Sidhartha Harichandan</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light">
+                    <img src="img/AMANDEEP.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Amandeep Kaur" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Amandeep Kaur</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 4: Sahaj (Image Right) -->
+      <section class="unit-section units-py-6 bg-white border-bottom border-light">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-0">
+            <div class="col-lg-6 order-lg-2 scroll-anim fade-in-right">
+              <div class="unit-img-wrapper position-relative overflow-hidden rounded-4 shadow-lg hover-scale">
+                <img src="img/blog-2.jpg" class="img-fluid w-100" style="object-fit: cover; height: 400px;" alt="Unit Sahaj" onerror="this.src='img/NSS_Logo.png'">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 scroll-anim fade-in-up delay-1">
+              <div class="unit-card p-5 rounded-4 shadow-sm glass-panel border border-light">
+                <h2 class="display-5 fw-bold text-dark mb-1">SEHAJ</h2>
+                <h5 class="mb-4 fw-bold fst-italic" style="color: #6c757d;">4th Year</h5>
+                <p class="mb-4 fs-6" style="color: #333; line-height: 1.8;">Sahaj focuses predominantly on promoting lifelong inner peace, intense mental well-being, and serene maturity alongside outward community service. Senior final-year volunteers boldly engage in holistic mindfulness practices, beautifully serving as totally balanced models of emotional strength and pure harmony.</p>
+                <h6 class="text-uppercase fw-bold text-dark mb-3 mt-4" style="font-size: 0.85rem; letter-spacing: 1px;">Programme Officers</h6>
+                <div class="d-flex flex-wrap gap-3 scroll-anim fade-in-up delay-2">
+                  <div class="d-flex align-items-center bg-light p-2 pe-4 rounded-4 shadow-sm border border-white">
+                    <img src="img/suresh.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Dr. S. Suresh" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Dr. S. Suresh</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 5: Sewa (Image Left) -->
+      <section class="unit-section units-py-6 bg-light border-bottom border-light">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-0">
+            <div class="col-lg-6 scroll-anim fade-in-left">
+              <div class="unit-img-wrapper position-relative overflow-hidden rounded-4 shadow-lg hover-scale">
+                <img src="img/blog-3.jpg" class="img-fluid w-100" style="object-fit: cover; height: 400px;" alt="Unit Sewa" onerror="this.src='img/NSS_Logo.png'">
+              </div>
+            </div>
+            <div class="col-lg-6 scroll-anim fade-in-up delay-1">
+              <div class="unit-card p-5 rounded-4 shadow-sm glass-panel border border-light">
+                <h2 class="display-5 fw-bold text-dark mb-1">SEWA</h2>
+                <h5 class="mb-4 fw-bold fst-italic" style="color: #6c757d;">4th Year</h5>
+                <p class="mb-4 fs-6" style="color: #333; line-height: 1.8;">Sewa is passionately focused absolutely strictly around pure, active volunteering and immensely practical hands-on service. Our heavily experienced final-year volunteers dedicate themselves deeply to consistently teaching massive underprivileged sectors and successfully managing nationwide blood donation campaigns.</p>
+                <h6 class="text-uppercase fw-bold text-dark mb-3 mt-4" style="font-size: 0.85rem; letter-spacing: 1px;">Programme Officers</h6>
+                <div class="d-flex flex-wrap gap-3 scroll-anim fade-in-up delay-2">
+                  <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light">
+                    <img src="img/than.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Than Singh" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Than Singh</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 6: Sanskar (Image Right) -->
+      <section class="unit-section units-py-6 bg-white border-bottom border-light">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-0">
+            <div class="col-lg-6 order-lg-2 scroll-anim fade-in-right">
+              <div class="unit-img-wrapper position-relative overflow-hidden rounded-4 shadow-lg hover-scale">
+                <img src="img/blog-1.jpg" class="img-fluid w-100" style="object-fit: cover; height: 400px;" alt="Unit Sanskar" onerror="this.src='img/NSS_Logo.png'">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 scroll-anim fade-in-up delay-1">
+              <div class="unit-card p-5 rounded-4 shadow-sm glass-panel border border-light">
+                <h2 class="display-5 fw-bold text-dark mb-1">SANSKAR</h2>
+                <h5 class="mb-4 fw-bold fst-italic" style="color: #6c757d;">4th Year</h5>
+                <p class="mb-4 fs-6" style="color: #333; line-height: 1.8;">Sanskar serves prominently as our highest hallmark of installing critically unmatched moral values and elite ethical conduct among veteran graduating leaders. Through profound cultural activities and sophisticated awareness sessions, it permanently solidifies remarkable robust character and intense personal integrity.</p>
+                <h6 class="text-uppercase fw-bold text-dark mb-3 mt-4" style="font-size: 0.85rem; letter-spacing: 1px;">Programme Officers</h6>
+                <div class="d-flex flex-wrap gap-3 scroll-anim fade-in-up delay-2">
+                  <div class="d-flex align-items-center bg-light p-2 pe-4 rounded-4 shadow-sm border border-white">
+                    <img src="img/yogita.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" alt="Yogita" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Yogita</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
-    
-    <div class="row g-4">
-      <!-- Unit 1 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100 shadow-sm border-0 border-bottom border-dark border-3 hover-lift">
-          <div class="card-body p-4">
-            <h4 class="card-title text-uppercase text-dark mb-1">Prayas</h4>
-            <h6 class="text-secondary fw-bold mb-3">1st Year</h6>
-            <p class="card-text text-dark" style="font-size: 0.95rem;">Prayas introduces first-year students to social service through basic community interaction, awareness drives, and campus cleanliness initiatives. The focus is on building sensitivity toward societal issues and instilling discipline and teamwork. Volunteers learn the value of small efforts and consistent actions in making a meaningful difference in society.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Unit 2 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100 shadow-sm border-0 border-bottom border-dark border-3 hover-lift">
-          <div class="card-body p-4">
-            <h4 class="card-title text-uppercase text-dark mb-1">Sahyog</h4>
-            <h6 class="text-secondary fw-bold mb-3">2nd Year</h6>
-            <p class="card-text text-dark" style="font-size: 0.95rem;">Sahyog emphasizes collaboration and coordination of 2nd year students. Volunteers engage in organizing events, conducting surveys, and executing awareness campaigns. This stage connects them with communities through education drives, plantation activities, and health awareness camps. It enhances communication and planning skills while nurturing empathy and responsibility.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Unit 3 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100 shadow-sm border-0 border-bottom border-dark border-3 hover-lift">
-          <div class="card-body p-4">
-            <h4 class="card-title text-uppercase text-dark mb-1">Sanskar</h4>
-            <h6 class="text-secondary fw-bold mb-3">3rd Year</h6>
-            <p class="card-text text-dark" style="font-size: 0.95rem;">Sanskar aims to instill strong moral values and ethical conduct among volunteers. Through cultural activities, discussions, and awareness sessions, it shapes their character, encouraging them to become responsible citizens with integrity and social consciousness.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Unit 4 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100 shadow-sm border-0 border-bottom border-dark border-3 hover-lift">
-          <div class="card-body p-4">
-            <h4 class="card-title text-uppercase text-dark mb-1">Sahaj</h4>
-            <h6 class="text-secondary fw-bold mb-3">3rd Year</h6>
-            <p class="card-text text-dark" style="font-size: 0.95rem;">Sahaj focuses on promoting inner peace and mental well-being. Volunteers engage in yoga, meditation, and mindfulness practices, learning to lead a balanced life. It emphasizes simplicity, harmony, and emotional strength.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Unit 5 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100 shadow-sm border-0 border-bottom border-dark border-3 hover-lift">
-          <div class="card-body p-4">
-            <h4 class="card-title text-uppercase text-dark mb-1">Seva</h4>
-            <h6 class="text-secondary fw-bold mb-3">3rd Year</h6>
-            <p class="card-text text-dark" style="font-size: 0.95rem;">Seva is centered around active volunteering and hands-on service. Volunteers teach underprivileged children, organize cleanliness drives, and conduct blood donation camps. This unit fosters compassion, leadership, and commitment to community service.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Unit 6 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100 shadow-sm border-0 border-bottom border-dark border-3 hover-lift">
-          <div class="card-body p-4">
-            <h4 class="card-title text-uppercase text-dark mb-1">Nirbhay</h4>
-            <h6 class="text-secondary fw-bold mb-3">4th Year</h6>
-            <p class="card-text text-dark" style="font-size: 0.95rem;">Nirbhay represents fearless leadership. Final-year volunteers lead and mentor juniors, manage events, and represent NSS. They guide projects and ensure continuity. It is the stage where confidence meets compassion.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- CTA Section -->
-    <div class="row mt-5">
-      <div class="col-12 text-center">
-        <div class="bg-light p-5 shadow-sm rounded hover-lift">
-          <h2 class="text-uppercase text-dark mb-3">Join Our Service Community</h2>
-          <p class="fs-5 text-dark mb-4">Be a part of our initiatives and help create meaningful impact in communities across the nation.</p>
-          <a href="contact.html" class="btn btn-primary modern-solid-btn py-3 px-5 fw-bold modern-btn">Volunteer Today</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Units End -->
   </main>
 
   <!-- Footer Start -->
@@ -263,6 +398,22 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.scroll-anim').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
 </body>
 
 </html>

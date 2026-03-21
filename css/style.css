@@ -1413,3 +1413,89 @@ html {
         height: 200px !important;
     }
 }
+
+/* --- NSS Units Animations & Layout --- */
+.units-py-6 {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.units-mb-6 {
+    margin-bottom: 80px !important;
+}
+
+.scroll-anim {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.scroll-anim.fade-in-left {
+    transform: translateX(-50px);
+}
+
+.scroll-anim.fade-in-right {
+    transform: translateX(50px);
+}
+
+.scroll-anim.fade-in-up {
+    transform: translateY(40px);
+}
+
+.scroll-anim.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.delay-1 {
+    transition-delay: 0.3s;
+}
+
+.delay-2 {
+    transition-delay: 0.6s;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px);
+}
+
+.unit-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.unit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.unit-head-img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.unit-card:hover .unit-head-img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+    .units-mb-6 {
+        margin-bottom: 40px !important;
+    }
+    .delay-1 {
+        transition-delay: 0.1s;
+    }
+    .delay-2 {
+        transition-delay: 0.2s;
+    }
+    .scroll-anim.fade-in-left, 
+    .scroll-anim.fade-in-right {
+        transform: translateY(30px);
+    }
+    .scroll-anim.fade-in-left.visible, 
+    .scroll-anim.fade-in-right.visible {
+        transform: translate(0, 0);
+    }
+}
