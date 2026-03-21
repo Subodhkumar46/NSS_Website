@@ -16,15 +16,9 @@
   <!-- Favicon -->
   <link href="img\Logo_White_1.png" rel="icon" />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
-    rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -94,13 +88,13 @@
     </div> -->
   <!-- Topbar End -->
 
-  <!-- Navbar Start -->
+    <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top py-2 px-4 px-lg-5">
     <a href="index.html" class="navbar-brand d-flex align-items-center">
       <img src="img/NSS_Logo.png" alt="NSS Logo" width="45" height="45" class="me-2" />
       <div class="d-flex flex-column text-start justify-content-center">
-        <h2 class="m-0 text-dark fs-5 fw-bold" style="font-family: 'Roboto', sans-serif; line-height: 1.2;">National Service Scheme</h2>
-        <p class="m-0 text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px; line-height: 1;">Kurukshetra</p>
+        <h2 class="m-0 text-dark fs-5 fw-bold" style="font-family: 'Poppins', sans-serif; line-height: 1.2;">National Service Scheme</h2>
+        <p class="m-0 text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px; line-height: 1; font-family: 'Inter', sans-serif;">Kurukshetra</p>
       </div>
     </a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -115,25 +109,23 @@
         <a href="cells.html" class="nav-item nav-link">Team</a>
         <a href="nss-camp.html" class="nav-item nav-link">NSS Camp</a>
         <a href="projects.html" class="nav-item nav-link">Projects</a>
-        <a href="#newspaper" class="nav-item nav-link">Newspaper</a>
+        <a href="index.html#newspaper" class="nav-item nav-link">Newspaper</a>
       </div>
-      <a href="contact.html#contact"
-        class="btn btn-primary rounded-pill py-2 px-4 ms-lg-3 d-none d-lg-block modern-btn">Contact</a>
-      <a href="contact.html#contact" class="btn btn-primary rounded-pill py-2 px-4 mt-2 mb-2 d-lg-none w-100 modern-btn">Contact</a>
+      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 ms-lg-3 d-none d-lg-block modern-solid-btn">Contact</a>
+      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 mt-2 mb-2 d-lg-none w-100 modern-solid-btn">Contact</a>
     </div>
   </nav>
   <!-- Navbar End -->
 
   <!-- Hero Start -->
   <div class="container-fluid p-0 hero-header">
-    <div class="container d-flex flex-column align-items-center justify-content-center text-center py-5"
-      style="min-height: 55vh;">
-      <h1 class="display-3 text-white fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">National
-        Service Scheme</h1>
-      <p class="fs-4 text-white mb-4 pb-2" style="max-width: 800px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
+    <div class="container d-flex flex-column align-items-start justify-content-center text-start h-100"
+      style="min-height: 55vh; padding-top: 120px; padding-bottom: 80px;">
+      <h1 class="display-3 text-white font-weight-bold mb-4" style="font-family: 'Poppins', sans-serif;">National<br>Service Scheme</h1>
+      <p class="fs-4 text-white mb-4 pb-2" style="max-width: 800px; font-weight: 300;">
         "Not Me, But You – Committed to social service and nation building through dedicated youth volunteers."
       </p>
-      <a href="#projects" class="btn btn-primary rounded-pill py-3 px-5 fw-bold modern-btn">Explore Programs</a>
+      <a href="#projects" class="btn btn-primary py-3 px-5 fw-bold modern-solid-btn">Explore Programs</a>
     </div>
   </div>
   <!-- Hero End -->
@@ -141,9 +133,10 @@
   <main class="flex-grow-1">
 
   <!-- About Start -->
-  <div class="container-fluid py-5 px-lg-5">
-    <div class="row g-5">
-      <div class="col-lg-7">
+  <div class="container-fluid py-6 px-lg-5">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="nss-slogan mt-2 mb-4">श्रमेव जयते...</h2>
         <h1 class="display-5 text-uppercase mb-4">
           Who we <span class="text-dark">Are</span> ?
         </h1>
@@ -151,7 +144,7 @@
           NSS NIT Kurukshetra consists of highly motivated and dedicated members towards serving the society thus
           contributing in a better tomorrow.
         </h4>
-        <p>
+        <p class="about-section-text">
           We aim at providing all the basic social services so that the nation can have citizens which are indeed an
           asset.
           We believe that the true sense of nationalism can only be imbibed in youth by those who are keenly interested
@@ -188,14 +181,15 @@
             </p>
           </div>
         </div>
-        <p class="mb-4">
+        <p class="mb-4 about-section-text">
           We also collaborate with several NGOs in and around and NIT Kurukshetra working on these issues.
         </p>
         <!-- <img src="img/signature.jpg" alt="" /> -->
       </div>
-      <div class="col-lg-5 pb-5" style="min-height: 400px">
-        <div class="position-relative bg-dark-radial h-100 ms-5">
-          <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/nss2.jpg" style="object-fit: cover" />
+      <div class="col-lg-6 pb-5" style="min-height: 450px">
+        <div class="position-relative h-100 ms-lg-5">
+          <div class="position-absolute w-100 h-100 bg-dark-radial rounded-3" style="top: 20px; left: -20px; z-index: 0;"></div>
+          <img class="position-relative w-100 h-100 about-img-enhanced" src="img/nss2.jpg" style="object-fit: cover; z-index: 1;" />
         </div>
       </div>
     </div>

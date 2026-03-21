@@ -12,8 +12,9 @@
     <link href="img\Logo_ White_1.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
@@ -67,56 +68,40 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-fixed w-100 top-0 navbar-wrapper px-2 pe-lg-0" style="z-index: 1030;">
-      <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand">
-          <h1 class="m-0 display-4 text-uppercase text-white">
-            <img
-              src="img/Logo_White_1.png"
-              alt="NSSNITKKR"
-              width="85"
-              height="85"
-            />
-          </h1>
-        </a>
-        <div class="ml-3 mr-5">
-          <p class="mb-0 th-nss fw-bold">
-            National Service Scheme
-          </p>
-          <p class="mb-0 th-clg-name">NIT Kurukshetra</p>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link active">About</a>
-            <a href="units.html" class="nav-item nav-link">Units</a>
-            <a href="events.html" class="nav-item nav-link">Events</a>
-            <a href="cells.html" class="nav-item nav-link">Team</a>
-            <a href="nss-camp.html" class="nav-item nav-link">NSS Camp</a>
-            <a href="projects.html" class="nav-item nav-link">Projects</a>
-            <a href="contact.html" class="btn-modern-contact d-none d-lg-flex">Contact <i class="bi bi-arrow-right ms-2"></i></a>
-            <!-- Mobile contact link -->
-            <a href="contact.html" class="nav-item nav-link d-lg-none">Contact</a>
-          </div>
-        </div>
-      </nav>
+      <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top py-2 px-4 px-lg-5">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <img src="img/NSS_Logo.png" alt="NSS Logo" width="45" height="45" class="me-2" />
+      <div class="d-flex flex-column text-start justify-content-center">
+        <h2 class="m-0 text-dark fs-5 fw-bold" style="font-family: 'Poppins', sans-serif; line-height: 1.2;">National Service Scheme</h2>
+        <p class="m-0 text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px; line-height: 1; font-family: 'Inter', sans-serif;">Kurukshetra</p>
+      </div>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto py-0 fw-bold align-items-center">
+        <a href="index.html" class="nav-item nav-link">Home</a>
+        <a href="about.html" class="nav-item nav-link active">About</a>
+        <a href="units.html" class="nav-item nav-link">Units</a>
+        <a href="events.html" class="nav-item nav-link">Events</a>
+        <a href="cells.html" class="nav-item nav-link">Team</a>
+        <a href="nss-camp.html" class="nav-item nav-link">NSS Camp</a>
+        <a href="projects.html" class="nav-item nav-link">Projects</a>
+        <a href="index.html#newspaper" class="nav-item nav-link">Newspaper</a>
+      </div>
+      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 ms-lg-3 d-none d-lg-block modern-solid-btn">Contact</a>
+      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 mt-2 mb-2 d-lg-none w-100 modern-solid-btn">Contact</a>
     </div>
-    <!-- Navbar End -->
+  </nav>
+  <!-- Navbar End -->
 
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header">
-        <h1 class="display-3 text-uppercase text-white mb-3">About</h1>
-        <div class="d-inline-flex text-white">
+        <h1 class="display-3 text-uppercase text-white mb-3 text-center">About</h1>
+        <div class="d-inline-flex text-white" style="opacity: 0.8;">
             <h6 class="text-uppercase m-0"><a href="">Home</a></h6>
             <h6 class="text-white m-0 px-3">/</h6>
             <h6 class="text-uppercase text-white m-0">About</h6>
@@ -126,11 +111,14 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="row g-5">
-            <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">श्रमोऽनवरत चेष्टा च ! <span class="text-dark"> Who We Are?</span></h1>
-                <p>Striving for the purpose of bringing peace and harmony across our motherland by inculcating every individual with spirit of humanity through community service, NSS NIT KURUKSHETRA is a society where all members are dedicated and toil to give their best shot by indulging ourselves in the service of humankind. We work on a diverse range of social issues including blood donation, education, environment, etc. by forming a consortium with several NGOs. Here we aim at providing each student with a significant context in which he/she can reach a deeper understanding of social reality in today’s era of India. The motto of NSS – “Not Me But You” fuels every member in our organization to give a selfless service which will lay the foundation of nation’s progress by progress of every individual. We function with a mission to mobilise our youth into a sect of progressive citizens and imbibe in them an inclination towards community service.</p>
+    <div class="container-fluid py-6 px-lg-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="nss-slogan mt-2 mb-4">श्रमोऽनवरत चेष्टा च !</h2>
+                <h1 class="display-5 text-uppercase mb-4">
+                  <span class="text-dark">Who We Are?</span>
+                </h1>
+                <p class="about-section-text">Striving for the purpose of bringing peace and harmony across our motherland by inculcating every individual with spirit of humanity through community service, NSS NIT KURUKSHETRA is a society where all members are dedicated and toil to give their best shot by indulging ourselves in the service of humankind. We work on a diverse range of social issues including blood donation, education, environment, etc. by forming a consortium with several NGOs. Here we aim at providing each student with a significant context in which he/she can reach a deeper understanding of social reality in today’s era of India. The motto of NSS – “Not Me But You” fuels every member in our organization to give a selfless service which will lay the foundation of nation’s progress by progress of every individual. We function with a mission to mobilise our youth into a sect of progressive citizens and imbibe in them an inclination towards community service.</p>
                 <!-- <div class="row gx-5 py-2">
                     <div class="col-sm-6 mb-2">
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Perfect Planning</p>
@@ -146,9 +134,10 @@
                 <!-- <p class="mb-4">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos labore</p>
                 <img src="img/signature.jpg" alt=""> -->
             </div>
-            <div class="col-lg-5 pb-5" style="min-height: 400px;">
-                <div class="position-relative bg-dark-radial h-100 ms-5">
-                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/nss1.jpg" style="object-fit: cover;">
+            <div class="col-lg-6 pb-5" style="min-height: 450px;">
+                <div class="position-relative h-100 ms-lg-5">
+                    <div class="position-absolute w-100 h-100 bg-dark-radial rounded-3" style="top: 20px; left: -20px; z-index: 0;"></div>
+                    <img class="position-relative w-100 h-100 about-img-enhanced" src="img/nss1.jpg" style="object-fit: cover; z-index: 1;">
                 </div>
             </div>
         </div>
