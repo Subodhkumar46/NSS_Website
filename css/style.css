@@ -1415,6 +1415,10 @@ html {
 }
 
 /* --- NSS Units Animations & Layout --- */
+.units-gradient-bg {
+    background: linear-gradient(135deg, #f8f9fc 0%, #e2e8f0 100%) !important;
+}
+
 .units-py-6 {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
@@ -1471,7 +1475,7 @@ html {
 .unit-head-img {
     width: 65px;
     height: 65px;
-    object-fit: cover;
+    object-fit: contain;
     background-color: #f8f9fa;
     transition: transform 0.3s ease;
 }
