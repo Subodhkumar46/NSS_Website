@@ -1638,8 +1638,8 @@ html {
     .border-end-md {
         border-right: none;
         border-bottom: 1px solid rgba(0,0,0,0.05);
-        padding-bottom: 1.5rem;
     }
+}
 /* --- NSS Full-Screen Song Section --- */
 .nss-fullscreen-song {
     position: relative;
