@@ -39,6 +39,16 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .unit-head-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .unit-head-card:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+    }
+  </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -125,30 +135,66 @@
               </div>
               <p class="fw-bold text-primary mb-4" style="font-size: 0.95rem;"><i class="fa fa-quote-left text-primary opacity-50 me-2"></i>Courage over fear. Serve with pure dedication.</p>
               
-              <div class="d-flex align-items-center mb-4 bg-light p-3 rounded-4 shadow-sm border border-white" style="max-width: 350px;">
-                <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:55px; height:55px; object-fit: cover;" alt="Unit Head">
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Name Coordinator</h6>
-                  <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Unit Head</p>
-                </div>
-              </div>
-              
               <p class="mb-4 fs-6 text-dark" style="line-height: 1.8;">Nirbhaya introduces first-year students to social service through basic community interaction, awareness drives, and campus cleanliness initiatives. The focus is on building sensitivity toward societal issues and instilling discipline and teamwork. Volunteers learn the value of small efforts and consistent actions in making a meaningful difference in society.</p>
               
-              <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Programme Officers</h6>
-              <div class="d-flex flex-wrap gap-3">
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light flex-grow-1">
-                  <img src="img/vaibhav.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Dr. Vaibhav Agarwal" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Dr. Vaibhav Agarwal</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+              <h5 class="text-uppercase fw-bold text-dark mb-3 mt-2" style="font-size: 1.15rem; letter-spacing: 1px;"><i class="fa fa-user-tie me-2 text-primary"></i>Program Officers</h5>
+              <div class="row g-4 mb-4">
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-light p-3 rounded-4 shadow-sm border border-primary unit-head-card">
+                    <img src="img/vaibhav.jpeg" class="rounded-circle shadow-sm border border-primary border-3 me-3" style="width:70px; height:70px; object-fit: cover;" alt="Dr. Vaibhav Agarwal" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h5 class="mb-1 fw-bold text-dark" style="font-size: 1.05rem;">Dr. Vaibhav Agarwal</h5>
+                      <p class="mb-0 text-primary fw-bold small" style="font-size: 0.85rem;">Program Officer</p>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light flex-grow-1">
-                  <img src="img/SWEETI.png" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Sweeti Sah" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Sweeti Sah</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-light p-3 rounded-4 shadow-sm border border-primary unit-head-card">
+                    <img src="img/SWEETI.png" class="rounded-circle shadow-sm border border-primary border-3 me-3" style="width:70px; height:70px; object-fit: cover;" alt="Sweeti Sah" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h5 class="mb-1 fw-bold text-dark" style="font-size: 1.05rem;">Sweeti Sah</h5>
+                      <p class="mb-0 text-primary fw-bold small" style="font-size: 0.85rem;">Program Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="text-uppercase fw-bold text-dark mb-4 mt-2" style="font-size: 1.1rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Unit Heads</h5>
+              <div class="row g-3">
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -175,30 +221,66 @@
               </div>
               <p class="fw-bold text-primary mb-4" style="font-size: 0.95rem;"><i class="fa fa-quote-left text-primary opacity-50 me-2"></i>Take the first step. Commit unconditionally. Build the nation.</p>
               
-              <div class="d-flex align-items-center mb-4 bg-light p-3 rounded-4 shadow-sm border border-white" style="max-width: 350px;">
-                <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:55px; height:55px; object-fit: cover;" alt="Unit Head">
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Name Coordinator</h6>
-                  <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Unit Head</p>
-                </div>
-              </div>
-              
               <p class="mb-4 fs-6 text-dark" style="line-height: 1.8;">Prayas actively introduces profound social service actions through direct community interaction, deep awareness drives, and robust campus cleanliness initiatives. The focus powerfully shifts toward consistently executing tangible small efforts to make a meaningful, lasting difference in local society.</p>
               
-              <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Programme Officers</h6>
-              <div class="d-flex flex-wrap gap-3">
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light flex-grow-1">
-                  <img src="img/dheeraj.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Dheeraj Kumar Sharma" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Dheeraj Kumar Sharma</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+              <h5 class="text-uppercase fw-bold text-dark mb-3 mt-2" style="font-size: 1.15rem; letter-spacing: 1px;"><i class="fa fa-user-tie me-2 text-primary"></i>Program Officers</h5>
+              <div class="row g-4 mb-4">
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-light p-3 rounded-4 shadow-sm border border-primary unit-head-card">
+                    <img src="img/dheeraj.jpeg" class="rounded-circle shadow-sm border border-primary border-3 me-3" style="width:70px; height:70px; object-fit: cover;" alt="Dheeraj Kumar Sharma" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h5 class="mb-1 fw-bold text-dark" style="font-size: 1.05rem;">Dheeraj Kumar Sharma</h5>
+                      <p class="mb-0 text-primary fw-bold small" style="font-size: 0.85rem;">Program Officer</p>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light flex-grow-1">
-                  <img src="img/CHILUKAMARI.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Chilukumari Rajesh" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Chilukumari Rajesh</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-light p-3 rounded-4 shadow-sm border border-primary unit-head-card">
+                    <img src="img/CHILUKAMARI.jpeg" class="rounded-circle shadow-sm border border-primary border-3 me-3" style="width:70px; height:70px; object-fit: cover;" alt="Chilukumari Rajesh" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h5 class="mb-1 fw-bold text-dark" style="font-size: 1.05rem;">Chilukumari Rajesh</h5>
+                      <p class="mb-0 text-primary fw-bold small" style="font-size: 0.85rem;">Program Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="text-uppercase fw-bold text-dark mb-4 mt-2" style="font-size: 1.1rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Unit Heads</h5>
+              <div class="row g-3">
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -225,116 +307,48 @@
               </div>
               <p class="fw-bold text-primary mb-4" style="font-size: 0.95rem;"><i class="fa fa-quote-left text-primary opacity-50 me-2"></i>Unit by force. Grow by collaboration. Lead globally.</p>
               
-              <div class="d-flex align-items-center mb-4 bg-light p-3 rounded-4 shadow-sm border border-white" style="max-width: 350px;">
-                <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:55px; height:55px; object-fit: cover;" alt="Unit Head">
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Name Coordinator</h6>
-                  <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Unit Head</p>
-                </div>
-              </div>
-              
               <p class="mb-4 fs-6 text-dark" style="line-height: 1.8;">Sahyog explicitly emphasizes active collaboration and immense planning coordination amongst 3rd-year students. Volunteers engage intimately in organizing monumental collaborative events, relentlessly conducting surveys, and flawlessly executing vast, far-reaching community awareness campaigns.</p>
               
-              <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Programme Officers</h6>
-              <div class="d-flex flex-wrap gap-3">
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light flex-grow-1">
-                  <img src="img/sidharth.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Sidhartha Harichandan" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Sidhartha Harichandan</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+              <h5 class="text-uppercase fw-bold text-dark mb-3 mt-2" style="font-size: 1.15rem; letter-spacing: 1px;"><i class="fa fa-user-tie me-2 text-primary"></i>Program Officers</h5>
+              <div class="row g-4 mb-4">
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-light p-3 rounded-4 shadow-sm border border-primary unit-head-card">
+                    <img src="img/sidharth.jpeg" class="rounded-circle shadow-sm border border-primary border-3 me-3" style="width:70px; height:70px; object-fit: cover;" alt="Sidhartha Harichandan" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h5 class="mb-1 fw-bold text-dark" style="font-size: 1.05rem;">Sidhartha Harichandan</h5>
+                      <p class="mb-0 text-primary fw-bold small" style="font-size: 0.85rem;">Program Officer</p>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light flex-grow-1">
-                  <img src="img/AMANDEEP.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Amandeep Kaur" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Amandeep Kaur</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Unit 4: SEHAJ -->
-      <section class="unit-section units-py-6 pb-2 border-bottom border-light">
-        <div class="container scroll-anim fade-in-up">
-          <div class="row g-0 align-items-stretch bg-white rounded-4 shadow-sm overflow-hidden unit-card border border-light">
-            <!-- Image Column -->
-            <div class="col-lg-5 order-lg-2 position-relative overflow-hidden">
-              <img src="img/sehaj.png" class="img-fluid w-100 h-100 unit-banner-img" style="object-fit: cover; min-height: 400px; transition: transform 0.5s ease;" alt="Unit Sahaj" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" onerror="this.src='img/NSS_Logo.png'">
-            </div>
-            <!-- Content Column -->
-            <div class="col-lg-7 order-lg-1 p-4 p-lg-5 d-flex flex-column justify-content-center glass-panel">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <h2 class="display-6 fw-bold text-dark mb-0">SEHAJ</h2>
-                <span class="badge bg-light text-secondary rounded-pill py-2 px-3 fw-bold fst-italic shadow-sm fs-6 border border-secondary" style="color: #6c757d !important;">4th Year</span>
-              </div>
-              <p class="fw-bold text-primary mb-4" style="font-size: 0.95rem;"><i class="fa fa-quote-left text-primary opacity-50 me-2"></i>Stay calm. Think deeply. Act profoundly.</p>
-              
-              <div class="d-flex align-items-center mb-4 bg-light p-3 rounded-4 shadow-sm border border-white" style="max-width: 350px;">
-                <img src="img/sehaj.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:55px; height:55px; object-fit: cover;" alt="Unit Head">
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Name Coordinator</h6>
-                  <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Unit Head</p>
-                </div>
-              </div>
-              
-              <p class="mb-4 fs-6 text-dark" style="line-height: 1.8;">Sahaj focuses predominantly on promoting lifelong inner peace, intense mental well-being, and serene maturity alongside outward community service. Senior final-year volunteers boldly engage in holistic mindfulness practices, beautifully serving as totally balanced models of emotional strength and pure harmony.</p>
-              
-              <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Programme Officers</h6>
-              <div class="d-flex flex-wrap gap-3 justify-content-center">
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light" style="min-width: 250px;">
-                  <img src="img/suresh.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Dr. S. Suresh" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Dr. S. Suresh</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-light p-3 rounded-4 shadow-sm border border-primary unit-head-card">
+                    <img src="img/AMANDEEP.jpeg" class="rounded-circle shadow-sm border border-primary border-3 me-3" style="width:70px; height:70px; object-fit: cover;" alt="Amandeep Kaur" onerror="this.src='img/NSS_Logo.png'">
+                    <div>
+                      <h5 class="mb-1 fw-bold text-dark" style="font-size: 1.05rem;">Amandeep Kaur</h5>
+                      <p class="mb-0 text-primary fw-bold small" style="font-size: 0.85rem;">Program Officer</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              
 
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Unit 5: SEWA -->
-      <section class="unit-section units-py-6 pb-2 border-bottom border-light">
-        <div class="container scroll-anim fade-in-up">
-          <div class="row g-0 align-items-stretch bg-white rounded-4 shadow-sm overflow-hidden unit-card border border-light">
-            <!-- Image Column -->
-            <div class="col-lg-5 position-relative overflow-hidden">
-              <img src="img/sewaunit.png" class="img-fluid w-100 h-100 unit-banner-img" style="object-fit: cover; min-height: 400px; transition: transform 0.5s ease;" alt="Unit Sewa" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" onerror="this.src='img/NSS_Logo.png'">
-            </div>
-            <!-- Content Column -->
-            <div class="col-lg-7 p-4 p-lg-5 d-flex flex-column justify-content-center glass-panel">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <h2 class="display-6 fw-bold text-dark mb-0">SEWA</h2>
-                <span class="badge bg-light text-secondary rounded-pill py-2 px-3 fw-bold fst-italic shadow-sm fs-6 border border-secondary" style="color: #6c757d !important;">4th Year</span>
-              </div>
-              <p class="fw-bold text-primary mb-4" style="font-size: 0.95rem;"><i class="fa fa-quote-left text-primary opacity-50 me-2"></i>Give freely. Love endlessly. Uplift everyone.</p>
-              
-              <div class="d-flex align-items-center mb-4 bg-light p-3 rounded-4 shadow-sm border border-white" style="max-width: 350px;">
-                <img src="img/sewaunit.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:55px; height:55px; object-fit: cover;" alt="Unit Head">
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Name Coordinator</h6>
-                  <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Unit Head</p>
+              <h5 class="text-uppercase fw-bold text-dark mb-4 mt-2" style="font-size: 1.1rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Unit Heads</h5>
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              <p class="mb-4 fs-6 text-dark" style="line-height: 1.8;">Sewa is passionately focused absolutely strictly around pure, active volunteering and immensely practical hands-on service. Our heavily experienced final-year volunteers dedicate themselves deeply to consistently teaching massive underprivileged sectors and successfully managing nationwide blood donation campaigns.</p>
-              
-              <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Programme Officers</h6>
-              <div class="d-flex flex-wrap gap-3 justify-content-center">
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light" style="min-width: 250px;">
-                  <img src="img/than.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Than Singh" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Than Singh</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
+                <div class="col-md-6 col-12">
+                  <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm border border-light unit-head-card">
+                    <img src="img/NSS_Logo.png" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:60px; height:60px; object-fit: cover;" alt="Unit Head">
+                    <div>
+                      <h6 class="mb-0 fw-bold text-dark">Unit Head Name</h6>
+                      <p class="mb-0 text-muted small" style="font-size: 0.85rem;">Unit Head</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -345,48 +359,7 @@
         </div>
       </section>
 
-      <!-- Unit 6: SANSKAR -->
-      <section class="unit-section units-py-6 mb-5 border-bottom border-light">
-        <div class="container scroll-anim fade-in-up">
-          <div class="row g-0 align-items-stretch bg-white rounded-4 shadow-sm overflow-hidden unit-card border border-light">
-            <!-- Image Column -->
-            <div class="col-lg-5 order-lg-2 position-relative overflow-hidden">
-              <img src="img/sanskar.png" class="img-fluid w-100 h-100 unit-banner-img" style="object-fit: cover; min-height: 400px; transition: transform 0.5s ease;" alt="Unit Sanskar" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" onerror="this.src='img/NSS_Logo.png'">
-            </div>
-            <!-- Content Column -->
-            <div class="col-lg-7 order-lg-1 p-4 p-lg-5 d-flex flex-column justify-content-center glass-panel">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <h2 class="display-6 fw-bold text-dark mb-0">SANSKAR</h2>
-                <span class="badge bg-light text-secondary rounded-pill py-2 px-3 fw-bold fst-italic shadow-sm fs-6 border border-secondary" style="color: #6c757d !important;">4th Year</span>
-              </div>
-              <p class="fw-bold text-primary mb-4" style="font-size: 0.95rem;"><i class="fa fa-quote-left text-primary opacity-50 me-2"></i>Maintain integrity. Elevate humanity. Champion virtue.</p>
-              
-              <div class="d-flex align-items-center mb-4 bg-light p-3 rounded-4 shadow-sm border border-white" style="max-width: 350px;">
-                <img src="img/" class="rounded-circle shadow-sm border border-white border-2 me-3" style="width:55px; height:55px; object-fit: cover;" alt="Unit Head">
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Name Coordinator</h6>
-                  <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Unit Head</p>
-                </div>
-              </div>
-              
-              <p class="mb-4 fs-6 text-dark" style="line-height: 1.8;">Sanskar serves prominently as our highest hallmark of installing critically unmatched moral values and elite ethical conduct among veteran graduating leaders. Through profound cultural activities and sophisticated awareness sessions, it permanently solidifies remarkable robust character and intense personal integrity.</p>
-              
-              <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 1px;"><i class="fa fa-users me-2 text-primary"></i>Programme Officers</h6>
-              <div class="d-flex flex-wrap gap-3 justify-content-center">
-                <div class="d-flex align-items-center bg-white p-2 pe-4 rounded-4 shadow-sm border border-light" style="min-width: 250px;">
-                  <img src="img/yogita.jpeg" class="unit-head-img rounded-circle shadow-sm border border-white border-3 me-3" style="width:60px; height:60px;" alt="Yogita" onerror="this.src='img/NSS_Logo.png'">
-                  <div>
-                    <h6 class="mb-0 fw-bold text-dark">Yogita</h6>
-                    <p class="mb-0 text-muted small" style="font-size: 0.8rem;">Programme Officer</p>
-                  </div>
-                </div>
-              </div>
 
-
-            </div>
-          </div>
-        </div>
-      </section>
 
     </div>
   </main>
