@@ -1041,9 +1041,13 @@ object-position:top;
     padding-top:120px;
 }
 .hero-header {
-    background: linear-gradient(rgba(4, 15, 40, 0.7), rgba(4, 15, 40, 0.7)), url(../img/administrative_edit.jpg) center center no-repeat;
+    background:
+        linear-gradient(rgba(4, 15, 40, 0.6), rgba(4, 15, 40, 0.6)),
+        url('../img/home/nss-admin.jpg');
+
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hero-header::before {
     content: "";
