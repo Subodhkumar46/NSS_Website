@@ -15,200 +15,20 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-  <style>
-    :root {
-      --primary-color: #198754;
-      --dark-blue: #0f172a;
-      --light-bg: #f1f5f9;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--light-bg);
-      color: #334155;
-    }
-
-    .camp-header {
-      background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('img/nitkkr.jpeg') center/cover no-repeat;
-      padding: 120px 0 80px;
-      color: white;
-      text-align: center;
-    }
-
-    .day-card {
-      background: #ffffff;
-      border-radius: 24px;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-      transition: all 0.4s ease;
-      margin-bottom: 60px;
-      padding: 45px;
-    }
-
-    .day-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    }
-
-    .day-badge {
-      background: var(--primary-color);
-      color: white;
-      padding: 6px 18px;
-      border-radius: 12px;
-      font-weight: 700;
-      display: inline-block;
-      margin-bottom: 20px;
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-    }
-
-    .day-title {
-      font-weight: 700;
-      color: var(--dark-blue);
-      margin-bottom: 15px;
-      font-size: 2rem;
-    }
-
-    .gallery-img {
-      height: 280px;
-      object-fit: cover;
-      border-radius: 15px;
-      transition: 0.5s;
-      cursor: pointer;
-    }
-
-    .gallery-img:hover {
-      filter: brightness(0.8);
-      transform: scale(1.02);
-    }
-
-    .footer-modern {
-      background: var(--dark-blue);
-      color: #94a3b8;
-      padding: 80px 0 30px;
-      border-top: 5px solid var(--primary-color);
-    }
-    
-    .footer-bottom {
-      background: #0b1120;
-      padding: 20px 0;
-    }
-
-    .social-icon {
-      width: 45px;
-      height: 45px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 10px;
-      color: white;
-      transition: 0.3s;
-      text-decoration: none;
-    }
-
-    .social-icon:hover {
-      background: var(--primary-color);
-      transform: rotate(360deg);
-      color: white;
-    }
-  
-    .gallery-scroll-container {
-      overflow-x: auto;
-      overflow-y: hidden;
-      display: flex;
-      gap: 15px;
-      padding-bottom: 15px;
-      padding-top: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
-      scrollbar-width: thin;
-      scrollbar-color: var(--primary-color) rgba(0,0,0,0.05);
-    }
-    .gallery-scroll-container::-webkit-scrollbar {
-      height: 8px;
-    }
-    .gallery-scroll-container::-webkit-scrollbar-track {
-      background: rgba(0, 0, 0, 0.05);
-      border-radius: 10px;
-    }
-    .gallery-scroll-container::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 10px;
-    }
-    .gallery-media {
-      height: 250px;
-      width: auto;
-      flex-shrink: 0;
-      object-fit: cover;
-      border-radius: 15px;
-      transition: 0.4s ease;
-      cursor: pointer;
-    }
-    .gallery-media:hover {
-      transform: scale(1.02);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-  </style>
-
-    <!-- Global Cinematic Variables -->
-    <style>
-        .cinematic-section {
-            background-color: #040F28; /* Deep Navy */
-            color: #ffffff;
-        }
-        .cinematic-heading {
-            font-family: 'Poppins', sans-serif;
-            color: #ffffff;
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05) !important;
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
-            border: 1px solid rgba(255, 255, 255, 0.15) !important;
-            border-radius: 20px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-            color: #fff !important;
-        }
-        .glass-card:hover {
-            transform: translateY(-8px) scale(1.02) !important;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(13, 71, 161, 0.4) !important;
-            background: rgba(255, 255, 255, 0.08) !important;
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
-        }
-    </style>
-
+  <link href="css/nss-camp-2026.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
-
-  
-  <style>
-    /* Cinematic Navbar Upgrade */
-    .navbar-glass {
-      background: rgba(4, 15, 40, 0.7) !important;
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      transition: all 0.4s ease;
-    }
-    .navbar-glass .nav-link { color: #ffffff !important; font-family: 'Inter', sans-serif; font-weight: 500; }
-    .navbar-glass .nav-link:hover, .navbar-glass .nav-link.active { color: #a855f7 !important; }
-    .navbar-glass .navbar-brand h2 { color: #ffffff !important; }
-    .navbar-glass .navbar-brand p { color: #bbbbbb !important; }
-    .navbar-glass .navbar-toggler-icon { filter: invert(1); }
-  </style>
-  <nav class="navbar navbar-expand-lg navbar-glass shadow-sm sticky-top py-3 px-4 px-lg-5">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass shadow-sm sticky-top py-3 px-4 px-lg-5 w-100">
     <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <img src="img/home/NSS_Logo.png" alt="NSS Logo" width="45" height="45" class="me-2" onerror="this.src='img/NSS_Logo.png'" />
+      <img src="img/home/NSS_Logo.png" alt="NSS Logo" width="45" height="45" class="me-2"
+        onerror="this.src='img/NSS_Logo.png'" />
       <div class="d-flex flex-column text-start justify-content-center">
-        <h2 class="m-0 text-dark fs-5 fw-bold" style="font-family: 'Poppins', sans-serif; line-height: 1.2;">National Service Scheme</h2>
-        <p class="m-0 text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px; line-height: 1; font-family: 'Inter', sans-serif;">Kurukshetra</p>
+        <h2 class="m-0 text-white fs-5 fw-bold" style="font-family: 'Poppins', sans-serif; line-height: 1.2;">National Service Scheme</h2>
+        <p class="m-0"
+          style="font-size: 0.85rem; letter-spacing: 0.5px; line-height: 1; font-family: 'Inter', sans-serif; color: #bbbbbb;">
+          Kurukshetra</p>
       </div>
     </a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -225,8 +45,10 @@
         <a href="projects.html" class="nav-item nav-link">Projects</a>
         <a href="newspaper.html" class="nav-item nav-link">Media</a>
       </div>
-      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 ms-lg-3 d-none d-lg-block modern-solid-btn" style="background: linear-gradient(135deg, #6366f1, #a855f7); border: none; border-radius: 50px;">Contact</a>
-      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 mt-2 mb-2 d-lg-none w-100 modern-solid-btn" style="background: linear-gradient(135deg, #6366f1, #a855f7); border: none; border-radius: 50px;">Contact</a>
+      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 ms-lg-3 d-none d-lg-block modern-solid-btn"
+        style="background: linear-gradient(135deg, #6366f1, #a855f7); border: none; border-radius: 50px;">Contact</a>
+      <a href="contact.html#contact" class="btn btn-primary py-2 px-4 mt-2 mb-2 d-lg-none w-100 modern-solid-btn"
+        style="background: linear-gradient(135deg, #6366f1, #a855f7); border: none; border-radius: 50px;">Contact</a>
     </div>
   </nav>
 
@@ -245,14 +67,55 @@
       <p class="text-muted fs-5">Camp ka aagaz tree plantation drive ke saath hua, jisme humne paryavaran sanrakshan ka
         sankalp liya.</p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+1+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 1 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
     <div class="day-card">
       <span class="day-badge">Day 02</span>
       <h2 class="day-title">Blood Donation Camp</h2>
-      <p class="text-muted fs-5">Volunteers and people of the village came together for a blood donation camp, promoting community health and solidarity.</p>
+      <p class="text-muted fs-5">Volunteers and people of the village came together for a blood donation camp, promoting
+        community health and solidarity.</p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+2+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 2 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
@@ -261,6 +124,26 @@
       <h2 class="day-title">Healthy Body, Healthy Mind</h2>
       <p class="text-muted fs-5">Sports aur yoga sessions ke madhyam se fitness aur teamwork ko promote kiya gaya.</p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+3+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 3 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
@@ -270,24 +153,87 @@
       <p class="text-muted fs-5">Waste management aur hygiene awareness ke liye door-to-door campaign aur safai
         karyakram.</p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+4+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 4 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
     <div class="day-card">
       <span class="day-badge">Day 05</span>
       <h2 class="day-title">Cultural Unity & Festivals</h2>
-      <p class="text-muted fs-5">Camp ke volunteers ne kheli holi, jisme unhone rangon ke saath apne aap ko aur ek dusre ko rangeen kar diya. Isse unke beech ki dosti aur bhi gehri ho gayi, aur unhone milkar holi ke tyohar ka anand liya. Yeh din unke liye ek yaadgar anubhav ban
+      <p class="text-muted fs-5">Camp ke volunteers ne kheli holi, jisme unhone rangon ke saath apne aap ko aur ek dusre
+        ko rangeen kar diya. Isse unke beech ki dosti aur bhi gehri ho gayi, aur unhone milkar holi ke tyohar ka anand
+        liya. Yeh din unke liye ek yaadgar anubhav ban
         gaya.</p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+5+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 5 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
     <div class="day-card">
       <span class="day-badge">Day 06</span>
       <h2 class="day-title">Awareness & Social Counseling</h2>
-      <p class="text-muted fs-5">Nashamukti (Drug Awareness) ,Fast food awareness and Career Counseling par vishesh satra aayojit kiye gaye.
+      <p class="text-muted fs-5">Nashamukti (Drug Awareness) ,Fast food awareness and Career Counseling par vishesh
+        satra aayojit kiye gaye.
       </p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+6+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 6 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
@@ -297,12 +243,32 @@
       <p class="text-muted fs-5">7 dino ki yaadon ko samet-te hue, camp ka समापन deshbhakti aur sanskritik prastutiyon
         ke saath hua.</p>
       <div class="gallery-scroll-container mt-4">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Collage" class="gallery-media gallery-collage"
+          onerror="this.src='https://placehold.co/800x500/198754/ffffff?text=Day+7+Collage'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 1" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+1'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 2" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+2'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 3" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+3'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 4" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+4'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 5" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+5'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 6" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+6'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 7" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+7'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 8" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+8'">
+        <img src="img/nsscamp/img.jpeg" alt="Day 7 Photo 9" class="gallery-media"
+          onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Photo+9'">
       </div>
     </div>
 
   </main>
 
-    <!-- Footer Start -->
+  <!-- Footer Start -->
   <div class="container-fluid footer-modern py-5 mt-auto">
     <div class="row g-5 px-lg-5">
       <!-- Column 1: About -->
@@ -328,7 +294,8 @@
           <a class="social-icon" href="https://www.facebook.com/nss.nitkkr"><i class="fab fa-facebook-f"></i></a>
           <a class="social-icon" href="https://www.linkedin.com/company/nss-nit-kurukshetra/"><i
               class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" href="https://www.instagram.com/nss_nitkkr?igsh=MWFrNWYyMzh4ZGVhNA==" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="social-icon" href="https://www.instagram.com/nss_nitkkr?igsh=MWFrNWYyMzh4ZGVhNA=="
+            target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
