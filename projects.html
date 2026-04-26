@@ -21,375 +21,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        /* ===== MODERN ENHANCEMENTS ===== */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #040F28;
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        .section-title-line {
-            width: 80px;
-            height: 5px;
-            background: #198754;
-            margin: 15px auto;
-            border-radius: 10px;
-        }
-
-        /* --- STUNNING HERO SECTION --- */
-        .projects-hero {
-            height: 80vh;
-            min-height: 600px;
-            background: linear-gradient(135deg, rgba(4, 15, 40, 0.9) 0%, rgba(25, 135, 84, 0.6) 100%),
-                url('img/nitkkr.jpeg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            clip-path: ellipse(150% 100% at 50% 0%);
-            /* Curved bottom */
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 0 20px;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            letter-spacing: 4px;
-            color: #2ecc71;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .fade-in-up {
-            opacity: 0;
-            animation: fadeInUp 1s ease forwards;
-        }
-
-        .slide-in-up {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: slideInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .btn-premium {
-            background: linear-gradient(45deg, #198754, #2ecc71);
-            color: white;
-            padding: 15px 45px;
-            border-radius: 50px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            border: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(25, 135, 84, 0.3);
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-premium:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(25, 135, 84, 0.5);
-            color: white;
-        }
-
-        /* --- CONTENT MAIN BG --- */
-        .projects-main-bg {
-            background: #040F28;
-            padding: 80px 0;
-            position: relative;
-            z-index: 10;
-        }
-
-        /* MODIFIED FLAGSHIP CARDS */
-        .flagship-wrapper-v2 {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 30px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            min-height: 100%;
-            /* FIX FOR OVERLAP OVERFLOW */
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 40px;
-        }
-
-        .flagship-wrapper-v2:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(25, 135, 84, 0.3);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(25, 135, 84, 0.4);
-        }
-
-        .focus-area-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        .focus-area-list li {
-            font-weight: 600;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-
-        .status-badge {
-            font-size: 0.7rem;
-            padding: 6px 16px;
-            border-radius: 50px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
-
-        .modern-sub-card {
-            border: none !important;
-            border-radius: 20px !important;
-            padding: 35px 28px !important;
-            background: rgba(255, 255, 255, 0.04) !important;
-            backdrop-filter: blur(16px) !important;
-            color: #fff !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
-            transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-            min-height: 100%;
-            height: auto;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        /* Gradient top-border accent */
-        .modern-sub-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            border-radius: 20px 20px 0 0;
-            background: var(--card-accent, linear-gradient(90deg, #198754, #2ecc71));
-            transition: height 0.4s ease;
-        }
-
-        .modern-sub-card:hover::before {
-            height: 8px;
-        }
-
-        .modern-sub-card:hover {
-            background: rgba(255, 255, 255, 0.08) !important;
-            transform: scale(1.04) translateY(-6px);
-            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5), var(--card-glow, 0 0 20px rgba(25, 135, 84, 0.3)) !important;
-            border-color: rgba(255, 255, 255, 0.2) !important;
-            z-index: 5;
-        }
-
-        .sub-icon-box {
-            width: 72px;
-            height: 72px;
-            border-radius: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 1.9rem;
-            transition: all 0.45s ease;
-            position: relative;
-        }
-
-        .modern-sub-card:hover .sub-icon-box {
-            transform: rotateY(180deg) scale(1.1);
-            filter: drop-shadow(0 0 10px currentColor);
-        }
-
-        .card-tag {
-            display: inline-block;
-            padding: 4px 14px;
-            border-radius: 50px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 14px;
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Outlook Banner */
-        .outlook-gradient {
-            background: linear-gradient(135deg, #001d3d 0%, #198754 100%);
-            border-radius: 40px;
-            color: #fff;
-            padding: 60px;
-            box-shadow: 0 20px 40px rgba(25, 135, 84, 0.2);
-        }
-
-        .bg-success-light {
-            background: rgba(25, 135, 84, 0.1);
-        }
-
-        .bg-primary-light {
-            background: rgba(13, 110, 253, 0.1);
-        }
-
-        /* Footer */
-        .footer-modern {
-            background: #040F28;
-            color: #94a3b8;
-            padding: 80px 0 30px;
-            border-top: 5px solid #198754;
-        }
-
-        .footer-bottom {
-            background: #0b1120;
-            padding: 20px 0;
-        }
-
-        .social-icon {
-            width: 42px;
-            height: 42px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 6px;
-            color: #fff;
-            transition: 0.3s ease;
-            text-decoration: none;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .social-icon:hover {
-            background: #198754;
-            transform: rotate(360deg);
-            color: white;
-            border-color: #198754;
-        }
-
-
-        /* FIX MEDIA QUERIES FOR HERO TEXT */
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2.5rem !important;
-            }
-
-            .projects-hero {
-                height: auto;
-                padding: 120px 0 80px 0;
-                clip-path: ellipse(180% 100% at 50% 0%);
-            }
-
-            .flagship-wrapper-v2 {
-                padding: 25px;
-            }
-
-            .outlook-gradient {
-                padding: 40px 20px;
-            }
-        }
-    </style>
-
-    <!-- Global Cinematic Variables -->
-    <style>
-        .cinematic-section {
-            background-color: #040F28;
-            /* Deep Navy */
-            color: #ffffff;
-        }
-
-        .cinematic-heading {
-            font-family: 'Poppins', sans-serif;
-            color: #ffffff;
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05) !important;
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
-            border: 1px solid rgba(255, 255, 255, 0.15) !important;
-            border-radius: 20px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-            color: #fff !important;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-8px) scale(1.02) !important;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(13, 71, 161, 0.4) !important;
-            background: rgba(255, 255, 255, 0.08) !important;
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
-        }
-    </style>
+    <link href="css/projects.css" rel="stylesheet">
 
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <style>
-        /* Cinematic Navbar Upgrade */
-        .navbar-glass {
-            background: rgba(4, 15, 40, 0.7) !important;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.4s ease;
-        }
-
-        .navbar-glass .nav-link {
-            color: #ffffff !important;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-        }
-
-        .navbar-glass .nav-link:hover,
-        .navbar-glass .nav-link.active {
-            color: #a855f7 !important;
-        }
-
-        .navbar-glass .navbar-brand h2 {
-            color: #ffffff !important;
-        }
-
-        .navbar-glass .navbar-brand p {
-            color: #bbbbbb !important;
-        }
-
-        .navbar-glass .navbar-toggler-icon {
-            filter: invert(1);
-        }
-    </style>
+    
     <nav class="navbar navbar-expand-lg navbar-glass shadow-sm sticky-top py-3 px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <img src="img/home/NSS_Logo.png" alt="NSS Logo" width="45" height="45" class="me-2"
@@ -620,7 +259,138 @@
                 </div>
             </div>
 
+            
+            <!-- PROJECT SHOWCASE: EMPOWERING COMMUNITIES -->
+            <div style="margin-top: 100px;">
+                <div class="text-center mb-5">
+                    <span style="display:inline-block; background: rgba(25,135,84,0.15); color:#2ecc71; padding: 6px 20px; border-radius:50px; font-size:0.8rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; border:1px solid rgba(46,204,113,0.3); margin-bottom:16px;">Empowering Communities</span>
+                    <h2 class="display-6 fw-bold text-white">PROJECT SHOWCASE</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <!-- Category I -->
+                <h3 class="showcase-category-title">I. Management-Oriented Initiatives</h3>
+                <p class="text-light opacity-75 mb-4">Focusing on strategic planning, coordination, and sustainable execution.</p>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Waste Management Campaign</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Combating pollution and health hazards caused by improper waste disposal through community education on segregation and recycling.</p>
+                            <ul class="project-details">
+                                <li><strong>Action Plan:</strong> Implementing door-to-door awareness, street plays, and installing labeled dustbins for wet and dry waste.</li>
+                                <li><strong>Key Focus:</strong> Promoting the "Reduce, Reuse, Recycle" philosophy to reduce the burden on landfills.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Digital Literacy Drive</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Bridging the digital divide by teaching essential smartphone and computer skills to senior citizens, women, and rural populations.</p>
+                            <ul class="project-details">
+                                <li><strong>Skills Taught:</strong> Practical training in UPI payments, online banking, email, and navigating online services.</li>
+                                <li><strong>Cyber Safety:</strong> Educating the community on avoiding OTP scams, fake links, and protecting personal passwords.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Disaster Management</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Building resilient communities through education on emergency response and safety measures for disasters.</p>
+                            <ul class="project-details">
+                                <li><strong>Training:</strong> Conducting mock drills for floods, earthquakes, and fires, alongside certified first-aid training.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Green Campus Initiative</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Transforming educational institutions into models of sustainability through tree plantations and energy conservation.</p>
+                            <ul class="project-details">
+                                <li><strong>Sustainability Tools:</strong> Rainwater harvesting, LED lighting, solar panels, and "paperless administration".</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category II -->
+                <h3 class="showcase-category-title">II. Social Impact Projects</h3>
+                <p class="text-light opacity-75 mb-4">Direct community service aimed at improving quality of life and social equity.</p>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Community Health</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Spreading knowledge on hygiene, nutrition, and preventive healthcare to reduce preventable diseases.</p>
+                            <ul class="project-details">
+                                <li><strong>Outreach:</strong> Organizing free health screening camps.</li>
+                                <li><strong>Special Focus:</strong> Dedicated campaigns for women’s menstrual hygiene and child immunization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Literacy Campaigns</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Promoting basic education, reading, and writing for illiterate adults and underprivileged children.</p>
+                            <ul class="project-details">
+                                <li><strong>Methodology:</strong> Organizing evening classes and mobile learning camps for practical reading and writing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Elder Care Initiatives</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Providing companionship, emotional support, and medical assistance to senior citizens to combat loneliness.</p>
+                            <ul class="project-details">
+                                <li><strong>Engagement:</strong> Organizing music, storytelling, and yoga sessions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Women Empowerment</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Enhancing financial independence and self-confidence of women through vocational training and legal awareness.</p>
+                            <ul class="project-details">
+                                <li><strong>Training Areas:</strong> Tailoring, handicrafts, digital marketing, self-defense, and domestic violence laws.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <h4 class="project-title">Anti-Substance Abuse</h4>
+                            <p class="project-mission"><strong>The Mission:</strong> Educating youth on the physical and social dangers of drugs, alcohol, and tobacco.</p>
+                            <ul class="project-details">
+                                <li><strong>Support:</strong> Promoting healthy coping methods and providing info on rehabilitation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category III -->
+                <h3 class="showcase-category-title">III. Financial & Entrepreneurship</h3>
+                <p class="text-light opacity-75 mb-4">Fostering self-reliance through economic literacy and innovation.</p>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <h4 class="project-title">Financial Literacy</h4>
+                            <ul class="project-details">
+                                <li><strong>Literacy & Savings:</strong> Teaching household budgeting, banking awareness, and the importance of insurance.</li>
+                                <li><strong>Self-Help Groups (SHGs):</strong> Encouraging collective savings and providing micro-loans.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <h4 class="project-title">Skill-Based Entrepreneurship</h4>
+                            <ul class="project-details">
+                                <li><strong>Entrepreneurship:</strong> Vocational training in bakery, mobile repair, etc. to create "job creators".</li>
+                                <li><strong>Recycling Business:</strong> Generating income by converting waste like plastic bottles into useful products.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="outlook-gradient text-center" style="margin-top: 80px;">
+
                 <i class="bi bi-binoculars fs-1 mb-3 d-block opacity-75"></i>
                 <h2 class="fw-bold text-uppercase">Future Outlook</h2>
                 <p class="mb-0 mx-auto fs-5" style="max-width: 750px; color: #ffffff;">
