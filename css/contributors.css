@@ -1,0 +1,198 @@
+/* ============================================
+   Contributors Section – Navy/Cinematic Theme
+   ============================================ */
+
+/* --- Section Background --- */
+.contributors-section {
+  background: linear-gradient(160deg, #040F28 0%, #071a3e 45%, #0a2a5e 75%, #040F28 100%);
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle animated ambient glow blobs */
+.contributors-section::before,
+.contributors-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contributors-section::before {
+  width: 500px;
+  height: 500px;
+  background: rgba(13, 71, 161, 0.25);
+  top: -100px;
+  left: -150px;
+  animation: ambientDrift 12s ease-in-out infinite alternate;
+}
+
+.contributors-section::after {
+  width: 400px;
+  height: 400px;
+  background: rgba(26, 138, 212, 0.18);
+  bottom: -80px;
+  right: -100px;
+  animation: ambientDrift 16s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes ambientDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(40px, 30px) scale(1.1); }
+}
+
+/* Keep content above pseudo-elements */
+.contributors-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Section Heading --- */
+.contributors-section .contributors-heading {
+  color: #ffffff !important;
+}
+
+.contributors-section .contributors-heading span {
+  background: linear-gradient(90deg, #82b1ff, #1a8ad4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- Card --- */
+.contributor-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 44px 48px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255,255,255,0.05);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s ease;
+  margin-bottom: 44px;
+  opacity: 0;
+  transform: translateY(36px);
+}
+
+.contributor-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s ease;
+}
+
+.contributor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 0 40px rgba(13, 71, 161, 0.2);
+}
+
+/* --- Image Ring --- */
+.contributor-image-wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 6px;
+  background: linear-gradient(135deg, #0d47a1, #1a8ad4, #82b1ff);
+  border-radius: 50%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(26, 138, 212, 0.4);
+}
+
+.contributor-img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border: 5px solid #040F28;
+  border-radius: 50%;
+  background-color: #071a3e;
+}
+
+/* --- Text Content --- */
+.contributor-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.contributor-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #1a8ad4, #82b1ff);
+  border-radius: 2px;
+}
+
+.reverse-row .contributor-title::after {
+  left: auto;
+  right: 0;
+}
+
+.contributor-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 15px;
+}
+
+.contributor-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.contributor-designation {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #82b1ff !important;
+}
+
+/* --- Divider between cards --- */
+.contributor-divider {
+  width: 60%;
+  margin: 0 auto 44px;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(130, 177, 255, 0.3), transparent);
+}
+
+/* --- Responsive --- */
+@media (max-width: 991px) {
+  .contributor-card {
+    padding: 32px 22px;
+  }
+  .contributor-img {
+    width: 180px;
+    height: 180px;
+  }
+  .reverse-row .contributor-title::after {
+    left: 0;
+    right: auto;
+  }
+  .order-lg-1.text-lg-end {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .contributors-section {
+    padding: 60px 0;
+  }
+  .contributor-title {
+    font-size: 1.6rem;
+  }
+}
