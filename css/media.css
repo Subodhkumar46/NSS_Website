@@ -1,0 +1,130 @@
+/* Media Highlights Section */
+.media-section {
+  background-color: #f8f9fa; /* Light mode background */
+  padding: 80px 0;
+  position: relative;
+}
+
+.media-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #040F28;
+}
+
+.media-heading span {
+  color: #1a8ad4;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.media-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.media-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.media-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.media-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.media-card:hover .media-img {
+  transform: scale(1.08);
+}
+
+.media-content {
+  padding: 30px 25px;
+}
+
+.media-category {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(26, 138, 212, 0.1);
+  color: #1a8ad4;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.media-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #222222;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.media-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Dark mode compatibility for site theme */
+.bg-dark .media-section,
+.dark-mode .media-section {
+  background-color: #0b1120;
+}
+
+.bg-dark .media-heading,
+.dark-mode .media-heading {
+  color: #ffffff;
+}
+
+.bg-dark .media-card,
+.dark-mode .media-card {
+  background-color: #151f32;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bg-dark .media-title,
+.dark-mode .media-title {
+  color: #ffffff;
+}
+
+.bg-dark .media-desc,
+.dark-mode .media-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-dark .media-card:hover,
+.dark-mode .media-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
