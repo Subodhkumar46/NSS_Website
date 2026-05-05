@@ -150,7 +150,7 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
     transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     min-height: 100%;
-    height: auto;
+    height: 100% !important;
     position: relative;
     z-index: 1;
     display: flex;
