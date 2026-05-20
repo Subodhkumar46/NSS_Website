@@ -1,0 +1,266 @@
+/* css/team-tribute.css */
+
+#alumni-tribute {
+    margin-bottom: 5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.section-label {
+    margin-bottom: 3rem;
+}
+
+.tribute-slider-container {
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    position: relative;
+    background: linear-gradient(135deg, rgba(30, 30, 40, 0.8) 0%, rgba(15, 15, 20, 0.95) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.tribute-slide-card {
+    height: 100%;
+    min-height: 450px;
+}
+
+.tribute-badge {
+    display: inline-block;
+    background: linear-gradient(45deg, #d32f2f, #f44336); /* NSS Red */
+    color: white;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
+}
+
+.gold-icon {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+.tribute-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tribute-meta {
+    font-size: 0.95rem;
+    color: #b0bec5;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.tribute-position {
+    color: #ff5252 !important; /* Brighter red */
+}
+
+.tribute-message {
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #ffd700;
+    border-radius: 0 15px 15px 0;
+    margin-top: 25px;
+    backdrop-filter: blur(5px);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 2rem;
+    color: rgba(255, 215, 0, 0.8);
+}
+
+.tribute-message p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    font-style: italic;
+}
+
+.tribute-img-col {
+    position: relative;
+    height: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tribute-img-wrap {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    padding: 10px;
+    background: linear-gradient(135deg, #ffd700, #d32f2f); /* Gold to Red */
+    animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.tribute-portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 5px solid #1a1a2e; /* Dark inner border */
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.tribute-portrait:hover {
+    transform: scale(1.02);
+}
+
+.img-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, rgba(255,215,0,0) 70%);
+    z-index: -1;
+    border-radius: 50%;
+    animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.9); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* Custom Carousel Controls */
+.custom-carousel-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 15;
+}
+
+.custom-carousel-btn:hover {
+    background: #ffd700;
+    border-color: #ffd700;
+}
+
+.custom-carousel-btn i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.custom-carousel-btn:hover i {
+    color: #000;
+}
+
+.tribute-slider-container:hover .custom-carousel-btn {
+    opacity: 1;
+}
+
+.carousel-control-prev.custom-carousel-btn {
+    left: 20px;
+}
+.carousel-control-next.custom-carousel-btn {
+    right: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.tribute-indicators {
+    bottom: 20px;
+}
+.tribute-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background-color: rgba(255,255,255,0.4) !important;
+    margin: 0 6px !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+}
+.tribute-indicators button.active {
+    background-color: #ffd700 !important;
+    transform: scale(1.3);
+}
+
+/* Slide Content Fade In Animation */
+.carousel-item.active .tribute-text-col {
+    animation: slideInLeft 0.8s ease forwards;
+}
+.carousel-item.active .tribute-img-col {
+    animation: slideInRight 0.8s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+    .tribute-slide-card {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .tribute-message {
+        border-left: none;
+        border-top: 4px solid #ffd700;
+        border-radius: 0 0 15px 15px;
+        margin-top: 30px;
+    }
+    .quote-icon {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+    }
+    .tribute-img-col {
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .tribute-img-wrap {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .tribute-name {
+        font-size: 2.2rem;
+    }
+    .custom-carousel-btn {
+        display: none; /* Hide arrows on mobile, rely on dots/swipe */
+    }
+}
